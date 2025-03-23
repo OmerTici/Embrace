@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Embrace/static/css/main.3812b737.css",
-    "main.js": "/Embrace/static/js/main.e197f85f.js",
+    "main.js": "/Embrace/static/js/main.45c37c4e.js",
     "static/js/453.2002e12b.chunk.js": "/Embrace/static/js/453.2002e12b.chunk.js",
     "index.html": "/Embrace/index.html",
     "main.3812b737.css.map": "/Embrace/static/css/main.3812b737.css.map",
-    "main.e197f85f.js.map": "/Embrace/static/js/main.e197f85f.js.map",
+    "main.45c37c4e.js.map": "/Embrace/static/js/main.45c37c4e.js.map",
     "453.2002e12b.chunk.js.map": "/Embrace/static/js/453.2002e12b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3812b737.css",
-    "static/js/main.e197f85f.js"
+    "static/js/main.45c37c4e.js"
   ]
 }
