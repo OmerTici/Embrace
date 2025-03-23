@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Embrace/static/css/main.7f1f93f5.css",
+    "main.js": "/Embrace/static/js/main.9eb43b06.js",
+    "static/js/453.2002e12b.chunk.js": "/Embrace/static/js/453.2002e12b.chunk.js",
+    "index.html": "/Embrace/index.html",
+    "main.7f1f93f5.css.map": "/Embrace/static/css/main.7f1f93f5.css.map",
+    "main.9eb43b06.js.map": "/Embrace/static/js/main.9eb43b06.js.map",
+    "453.2002e12b.chunk.js.map": "/Embrace/static/js/453.2002e12b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f1f93f5.css",
+    "static/js/main.9eb43b06.js"
+  ]
+}
