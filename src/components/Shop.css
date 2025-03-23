@@ -1,0 +1,70 @@
+/* src/components/Shop.css */
+
+.shop-container {
+    position: relative;
+    min-height: 100vh;
+    background: #000; /* full black background */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* content starts at the top */
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    padding-top: 10%; /* adjust vertical position as needed */
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  /* Fade Out Animation */
+  @keyframes fadeOut {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+  }
+  
+  /* Apply fade-out when container gets the .fade-out class */
+  .fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+  }
+  
+  /* Shop message styling */
+  .shop-message h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .shop-message p {
+    font-size: 1.5rem;
+  }
+  
+  /* Go Back Button styling (matches your other pages) */
+  .go-back-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #000;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease;
+    color: #fff;
+  }
+  
+  .go-back-btn:hover {
+    background-color: #333;
+  }
+  
+  .go-back-icon {
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+  }
+  

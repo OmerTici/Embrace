@@ -1,12 +1,17 @@
-import React from 'react';
+// src/components/Events.js
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Events.css';
 
 function Events() {
   const navigate = useNavigate();
+  const [fadeOut, setFadeOut] = useState(false);
 
   const handleGoBack = () => {
-    navigate(-1);
+    setFadeOut(true);
+    setTimeout(() => {
+      navigate(-1);
+    }, 500);
   };
 
   const handleGetTicket = () => {
@@ -17,20 +22,12 @@ function Events() {
   };
 
   return (
-    <div className="events-page">
-      {/* Responsive Background Image */}
-      {/* <picture className="bg-picture">
-        <source 
-          srcSet="/_.@2x.jpeg 2x, /_.jpeg 1x" 
-          media="(min-resolution: 192dpi)" 
-        />
-        <img src="/_.jpeg" alt="Background" className="bg-image" />
-      </picture> */}
-
+    <div className={`events-page ${fadeOut ? 'fade-out' : ''}`}>
       {/* Go Back Button */}
       <button className="go-back-btn" onClick={handleGoBack}>
         <span className="go-back-icon">&#8592;</span> Go Back
       </button>
+      <br />
 
       <h1 className="events-title">Upcoming Events</h1>
 
@@ -58,19 +55,6 @@ function Events() {
           </button>
         </div>
       </div>
-
-      {/* <h2 className="past-events-title">Past Events</h2>
-      <div className="past-events-row">
-        <div className="past-event-item">
-          <img
-            src="/March28th_flyer_visual_2.png"
-            alt="Past Event Poster"
-            className="past-poster"
-          />
-          <p className="past-date">Feb 15, 2023</p>
-          <p className="past-location">New York, USA</p>
-        </div>
-      </div> */}
     </div>
   );
 }
