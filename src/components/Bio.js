@@ -48,7 +48,7 @@ function Bio() {
 
       {/* Bottom logo container */}
       <div className="bottom-logo-container">
-        <img src="/Embrace/uhuhaha.png" alt="Floating Logo" />
+        <img src="/uhuhaha.png" alt="Floating Logo" />
         <div className="bio-links">
           <a href="mailto:we@embraceverything.com" className="bio-link" title="Email">
             <i className="fa-solid fa-envelope"></i>

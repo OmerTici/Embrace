@@ -10,7 +10,7 @@ function HomePage() {
       {/* Desktop View: Large Logo(s) */}
       <div className="desktop-view">
         <div className="desktop-logo">
-          <img src="/Embrace/white_logo.png" alt="White Logo" />
+          <img src="/white_logo.png" alt="White Logo" />
         </div>
         {/* <div className="desktop-embrace-text">
           <img src="/Embrace/embrace_text.png" alt="Embrace Writing" />
@@ -30,7 +30,7 @@ function HomePage() {
         </div>
 
         <div className="mobile-logo">
-          <img src="/Embrace/white_logo.png" alt="White Logo" />
+          <img src="/white_logo.png" alt="White Logo" />
         </div>
       </div>
     </div>
