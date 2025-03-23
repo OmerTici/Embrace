@@ -34,7 +34,7 @@ function Events() {
       {/* UPCOMING EVENT */}
       <div className="upcoming-event">
         <img
-          src="/Embrace/March28th_flyer_visual_2.png"
+          src="/Embrace/flyer_wnewdj.png"
           alt="Upcoming Event Poster"
           className="big-poster"
         />
