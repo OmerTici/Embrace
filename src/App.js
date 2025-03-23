@@ -20,7 +20,7 @@ function MainContainer() {
         padding: 0,
         minHeight: '100vh',
         backgroundImage:
-          'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/Embrace/aliefe2.jpeg")',
+          'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/aliefe2.jpeg")',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -69,7 +69,7 @@ function MainContainer() {
           </div>
           <div className="logo">
             <img
-              src="/Embrace/uhuhaha.png"
+              src="/uhuhaha.png"
               alt="Embrace Logo"
               className="logo-img"
             />
