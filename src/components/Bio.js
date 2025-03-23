@@ -43,7 +43,7 @@ function Bio() {
 
       {/* Bottom floating logo and text container */}
       <div className="bottom-logo-container">
-        <img src="/uhuhaha.png" alt="Floating Logo" />
+        <img src="/Embrace/uhuhaha.png" alt="Floating Logo" />
 
         {/* Icon links under "Lets EmbracE!" */}
         <div className="bio-links">

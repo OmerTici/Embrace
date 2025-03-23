@@ -68,7 +68,7 @@ function HomePage() {
         <video
           ref={videoRef1}
           className="column-video"
-          src="/website2.mp4"
+          src="/Embrace/website2.mp4"
           loop
           muted
           preload="auto"
@@ -88,7 +88,7 @@ function HomePage() {
         <video
           ref={videoRef2}
           className="column-video"
-          src="/website1.mp4"
+          src="/Embrace/website1.mp4"
           loop
           muted
           preload="auto"
@@ -108,7 +108,7 @@ function HomePage() {
         <video
           ref={videoRef3}
           className="column-video"
-          src="/website3.mp4"
+          src="/Embrace/website3.mp4"
           loop
           muted
           preload="auto"

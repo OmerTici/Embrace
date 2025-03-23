@@ -6,7 +6,7 @@ import Events from './components/Events';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Embrace">
       <div
         style={{
           margin: 0,
@@ -27,7 +27,7 @@ function App() {
         }}>
           {/* Increased logo size */}
           <img 
-            src="/white_logo.png" 
+            src="/Embrace/white_logo.png" 
             alt="Embrace Logo" 
             style={{ height: '300px', objectFit: 'contain' }} 
           />
