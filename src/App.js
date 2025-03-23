@@ -97,7 +97,7 @@ function MainContainer() {
 
 function App() {
   return (
-    <Router basename="/Embrace">
+    <Router>
       <MainContainer />
     </Router>
   );
