@@ -1,0 +1,175 @@
+/* Smooth fade-in for the page */
+.events-page {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  padding: 2rem;
+  background: #000; /* black fallback */
+  box-sizing: border-box;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Responsive Background Picture */
+.bg-picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Go Back Button */
+.go-back-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: #000;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+.go-back-btn:hover {
+  background-color: #333;
+}
+
+.go-back-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Titles */
+.events-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.past-events-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem 0 1rem;
+  color: #fff;
+}
+
+/* UPCOMING EVENT Layout */
+.upcoming-event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.big-poster {
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+  animation: floatPoster 3s ease-in-out infinite;
+  margin-bottom: 2rem;
+}
+
+@keyframes floatPoster {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.event-details-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.event-date {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.event-map {
+  width: 300px;
+  height: 200px;
+}
+
+.event-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+.event-location {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.ticket-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ticket-btn:hover {
+  background-color: #ddd;
+}
+
+/* Past Events Layout */
+.past-events-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.past-event-item {
+  width: 14%;
+  min-width: 120px;
+  text-align: center;
+}
+
+.past-poster {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.past-date {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+.past-location {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #fff;
+}
