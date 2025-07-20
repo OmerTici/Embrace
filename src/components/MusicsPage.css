@@ -1,0 +1,117 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* star‑field background */
+.sky-container {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#stars,
+#stars2,
+#stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  animation: star-move linear infinite;
+  z-index: 0;
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+}
+
+@keyframes star-move {
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+/* main page layer */
+.music-page {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+  min-height: 100vh;
+  transition: opacity 0.5s ease;
+}
+
+.music-page.fade-out {
+  opacity: 0;
+}
+
+.album.main {
+  --album-size: 300px;
+  --vinyl-size: 280px;
+  margin-bottom: 3rem;
+}
+
+.album-link {
+  cursor: pointer;
+}
+
+.small-row {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.album-caption {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #fff;
+}
+
+.go-back-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+.go-back-btn:hover {
+  background: #333;
+}
+
+.go-back-icon {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* phone: shrink main album */
+@media (max-width: 480px) {
+  .album.main {
+    --album-size: 200px;
+    --vinyl-size: 180px;
+  }
+}

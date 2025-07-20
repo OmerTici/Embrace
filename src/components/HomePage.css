@@ -1,14 +1,8 @@
 .homepage-container {
   position: relative;
   min-height: 100vh;
-  /* If you already have a global background in App.js, you can leave this out.
-     Otherwise, add your background here:
-     background: url("/Embrace/aliefe2.jpeg") no-repeat center center;
-     background-size: cover;
-  */
 }
 
-/* Desktop: Show these sections by default, hide on mobile */
 .desktop-view {
   display: block;
   position: relative;
@@ -17,27 +11,26 @@
 
 .desktop-logo {
   position: absolute;
-  bottom: 2rem; /* for example */
+  bottom: 2rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .desktop-logo img {
-  width: 300px;  /* or bigger if you want */
+  width: 300px;
 }
 
 .desktop-embrace-text {
   position: absolute;
-  bottom: 0.5rem; /* just above or below the logo */
+  bottom: 0.5rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .desktop-embrace-text img {
-  width: 250px;  /* adjust as needed */
+  width: 250px;
 }
 
-/* Mobile: hidden by default, shown on smaller screens */
 .mobile-view {
   display: none;
   flex-direction: column;
@@ -48,11 +41,10 @@
 }
 
 .mobile-logo img {
-  width: 200px; /* or whatever size you like */
+  width: 200px;
   margin: 0.5rem 0;
 }
 
-/* Mobile Buttons */
 .mobile-buttons {
   display: flex;
   flex-direction: column;
@@ -72,7 +64,7 @@
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
   text-align: center;
-  text-decoration: none; /* remove underline for links */
+  text-decoration: none;
 }
 
 .mobile-btn:hover {
@@ -80,21 +72,65 @@
   color: #000;
 }
 
-/* -- Media Query: Switch to Mobile Layout -- */
+.desktop-nav {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+}
+
+.desktop-btn {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border: 2px solid #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.desktop-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.social-row {
+  position: fixed;
+  bottom: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.social-link {
+  font-size: 1.9rem;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #1db954;
+}
+
 @media (max-width: 768px) {
   .desktop-view {
-    display: none; /* hide the desktop version */
+    display: none;
   }
   .mobile-view {
-    display: flex; /* show the mobile version */
+    display: flex;
   }
 }
 
 @media (max-width: 1024px) {
   .desktop-view {
-    display: none; /* hide the desktop version */
+    display: none;
   }
   .mobile-view {
-    display: flex; /* show the mobile version */
+    display: flex;
   }
 }

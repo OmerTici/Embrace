@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react
 import HomePage from './components/HomePage';
 import Bio from './components/Bio';
 import Events from './components/Events';
-import MediaDropdown from './components/MediaDropdown';
+// import MediaDropdown from './components/MediaDropdown';
+import MusicsPage from './components/MusicsPage';
 import './App.css';
 import Shop from './components/Shop';
 
@@ -78,7 +79,9 @@ function MainContainer() {
             <Link to="/shop" className="nav-link">
               <button className="nav-btn">Shop</button>
             </Link>
-            <MediaDropdown />
+            <Link to="/musics" className="nav-link">
+              <button className="nav-btn">Music</button>
+            </Link>
           </div>
         </div>
       </header>
@@ -89,6 +92,7 @@ function MainContainer() {
           <Route path="/bio" element={<Bio />} />
           <Route path="/events" element={<Events />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/musics" element={<MusicsPage />} />
         </Routes>
       </main>
     </div>
