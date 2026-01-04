@@ -33,6 +33,9 @@ function Events() {
 
       {/* UPCOMING EVENT */}
       <div className="upcoming-event">
+        <h1>TBA</h1>
+      </div>
+      {/* <div className="upcoming-event">
         <img
           src="/flyer_wnewdj.png"
           alt="Upcoming Event Poster"
@@ -54,7 +57,7 @@ function Events() {
             Get Ticket
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
